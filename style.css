@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: CODE;
+    src: url(/CODE\ Bold.otf);
+}
+
+@font-face {
+    font-family: Dream;
+    src: url(/Dream\ Orphans.otf);
+}
+
+@font-face {
+    font-family: Ricordi;
+    src: url(/TT\ Ricordi\ Allegria\ Trial\ Light.ttf);
+}
+
+@font-face {
+    font-family: RicordiBold;
+    src: url(/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf);
+}
+
+body{
+    background-color: black;
+}
+
+.dev{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: CODE;
+    height: 10vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin-left: 16px;
+}
+
+.logo{
+    width:40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover{
+    opacity: 0.5;
+    color: rgb(144, 223, 17);
+}
+
+.title{
+    color: white;
+    padding: 200px;
+    font-size: 100px;
+}
+
+.location{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.dw{
+    font-family: RicordiBold;
+    letter-spacing: 10px;
+}
+
+.presentation{
+    color: white;
+    font-family: "Montserrat";
+    margin-top: 200px;
+    background-color: rgb(78, 155, 78);
+}
+
+.title-presentation{
+    font-size: 50px;
+}
+
+.text-presetation{
+    text-align: justify;
+}
+
