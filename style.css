@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
-    font-family: CODE;
-    src: url(/CODE\ Bold.otf);
+    font-family: Code;
+    src: url("CODE\ Light.otf");
 }
 
 @font-face {
     font-family: Dream;
-    src: url(/Dream\ Orphans.otf);
+    src: url("/Dream\ Orphans.otf");
 }
 
 @font-face {
     font-family: Ricordi;
-    src: url(/TT\ Ricordi\ Allegria\ Trial\ Light.ttf);
+    src: url("/TT\ Ricordi\ Allegria\ Trial\ Light.ttf");
 }
 
 @font-face {
     font-family: RicordiBold;
-    src: url(/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf);
+    src: url("/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf");
 }
 
-body{
+
+*{
+    scroll-behavior: smooth;
     background-color: black;
+    
 }
 
 .dev{
@@ -31,8 +34,9 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: CODE;
+    font-family: Code;
     height: 10vh;
+    letter-spacing: 1px;
 }
 
 .nav-list{
@@ -73,22 +77,112 @@ a:hover{
 }
 
 .dw{
-    font-family: RicordiBold;
+    font-family: Ricordi;
     letter-spacing: 10px;
 }
 
-.presentation{
+#presentation{
     color: white;
     font-family: "Montserrat";
-    margin-top: 200px;
-    background-color: rgb(78, 155, 78);
+    margin-top: 100px;
 }
 
 .title-presentation{
     font-size: 50px;
+    align-items: center;
 }
 
 .text-presetation{
     text-align: justify;
+    padding: 50px;
 }
 
+.prese{
+    padding: 100px;
+    padding-bottom: 100px;
+}
+
+.conteudo{
+    color: white;
+}
+
+.conteudo-title{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 50px;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 180px;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px white;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.container .card:hover{
+    height: 420px;
+    
+}
+
+.container .card. .imgB{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px;
+    columns: 3;
+    
+}
+
+.container .card .imgB img{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+
+.objetivos{
+    color: green;
+}
+
+.xxx{
+    margin-left: 30px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border-bottom-right-radius: 20px;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.5s;
+}
